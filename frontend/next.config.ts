@@ -1,13 +1,16 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // Ignore ESLint errors during build
-  eslint: {
-    ignoreDuringBuilds: true,
+  // Disable telemetry
+  telemetry: {
+    disabled: true
   },
-  // Ignore TypeScript build errors (if applicable)
+  // Ignore build errors
   typescript: {
-    ignoreBuildErrors: true,
+    ignoreBuildErrors: true
   },
-}
+  eslint: {
+    ignoreDuringBuilds: true
+  }
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;
